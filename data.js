@@ -8,6 +8,17 @@ button.addEventListener('click', ()=>{
   document.body.appendChild(pEl)
 })
 
-let response = fetch('nivniv')
-console.log(response)
-console.log('buongiorno')
+fetch('https://jsonpaceholder.typicode.com/photos').then(function(restituzionefetch){
+
+  return restituzionefetch.json();
+ 
+}).then(function(restituzionefetch){
+  console.log(restituzionefetch)
+}).catch(function(error){
+  console.log(error)
+})
+
+
+
+
+
