@@ -10,3 +10,4 @@ button.addEventListener('click', ()=>{
 
 let response = fetch('nivniv')
 console.log(response)
+console.log('buongiorno')
